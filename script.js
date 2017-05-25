@@ -104,11 +104,12 @@ repeat prompt until user put required number,
 then display result of prompt*/
 console.log('-do it using "while":')
 function wish(){
-	var request = 0;
-	while (request <= 100){
-		request = prompt('Please enter a number than bigger 100', 101);
+	var request = parseInt(prompt('Please enter a number than bigger 100'));
+	while (request < 100||isNaN(request)){
+		request = parseInt(prompt('Please enter a number than bigger 100'));
 	}
-	console.log(request + ', You have a good job!')
+	alert(request);
+	console.log(request + ', You have done a good job!')
 }
 wish();
 console.log("\n")
@@ -117,10 +118,11 @@ console.log("\n")
 console.log('-do it using "do while":')
 function ask(){
 	do{
-		var request = prompt('Please enter a number than bigger 100', 101);
+		var request = parseInt(prompt('Please enter a number than bigger 100'));
 		}
-		while (request <= 100 && request != null)
-		console.log(request + ', Congrats, You have a good job again!!!')
+		while (request < 100 || isNaN(request));
+		alert(request);
+		console.log(request + ', Congrats, You have done a good job again!!!')
 	}
 ask();
 console.log("\n")
