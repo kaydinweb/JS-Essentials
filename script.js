@@ -108,7 +108,7 @@ function wish(){
 	while (request <= 100){
 		request = prompt('Please enter a number than bigger 100', 101);
 	}
-	console.log('You have a good job!')
+	console.log(request + ', You have a good job!')
 }
 wish();
 console.log("\n")
@@ -120,7 +120,7 @@ function ask(){
 		var request = prompt('Please enter a number than bigger 100', 101);
 		}
 		while (request <= 100 && request != null)
-		console.log('Congrats, You have a good job again!!!')
+		console.log(request + ', Congrats, You have a good job again!!!')
 	}
 ask();
 console.log("\n")
